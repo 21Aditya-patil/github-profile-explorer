@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  ::selection {
+    background: #000000;
+    color: #ffffff;
+  }
+}
+
+
 @keyframes fadeInScale {
   0% {
     opacity: 0;
@@ -16,3 +24,5 @@
 .animate-fadeInScale {
   animation: fadeInScale 0.7s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
+
+
